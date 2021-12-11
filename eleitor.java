@@ -12,14 +12,14 @@ public class eleitor {
             Idade = teclado.nextInt();
 
             if (Idade < 16)
-                naoeleitor = naoeleitor+1;
+                naoeleitor++;
                            
 
                 if (Idade >=18 && Idade <=69) 
-                obrigatorio = obrigatorio+1;
-                         
+                obrigatorio++;
+                      
                 if (Idade == 16 || Idade == 17 || Idade>= 70) 
-                facultativo = facultativo+1;
+                facultativo++;
               
                 System.out.print("Quer continuar? [S/N] ");
                 resp = teclado.next();
